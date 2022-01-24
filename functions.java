@@ -14,21 +14,11 @@ public class functions {
 
     // Prints the input directly, can be used without variables (i.e. print("Hello world");)
     static public void print(boolean input) { System.out.print(input); }
-    static public void print(double input) {
-        System.out.print(input);
-    }
-    static public void print(String input) {
-        System.out.print(input);
-    }
-    static public void print(float input) {
-        System.out.print(input);
-    }
-    static public void print(short input) {
-        System.out.print(input);
-    }
-    static public void print(char input) {
-        System.out.print(input);
-    }
+    static public void print(double input) { System.out.print(input); }
+    static public void print(String input) { System.out.print(input); }
+    static public void print(float input) { System.out.print(input); }
+    static public void print(short input) { System.out.print(input); }
+    static public void print(char input) { System.out.print(input); }
     static public void print(byte input) { System.out.print(input); }
     static public void print(long input) { System.out.print(input); }
     static public void print(int input) { System.out.print(input); }
