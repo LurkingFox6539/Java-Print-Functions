@@ -1,14 +1,12 @@
 /*  Functions class for Java
-*   Mark Wheeler III
-*   January 20th, 2022
-*   Purpose:
-*       This class once implemented provides a variety of functions that simplify writing out a few tedious
-*       things with java input and output. Use by using "import static functions.functions.*".
+ *   Mark Wheeler III
+ *   January 20th, 2022
+ *   Purpose:
+ *       This class once implemented provides a variety of functions that simplify writing out a few tedious
+ *       things with java input and output. Use by using "import static functions.functions.*".
  *   Modified January 27th, 2022:
- *       Added function to return a new Random seeded with system time
- *       Added function to return random int based on Random function
- *       Added function to return boolean based on user input
-*/
+ *       Added askYN() and getRand()
+ */
 
 package functions;
 import java.util.Random;
@@ -40,11 +38,10 @@ public class functions {
     static public long getLong() { return scanObj.nextLong(); }
     static public byte getByte() { return scanObj.nextByte(); }
     static public int getInt() { return scanObj.nextInt(); }
-    
-    // Will return a random number using system time
-    static public Random newRand() { return new Random(System.currentTimeMillis()); }
+
+    // Integer production/calculation functions
     static public int getRand(int bound) {
-        Random rand = newRand();
+        Random rand = new Random(System.currentTimeMillis());
         return rand.nextInt(bound);
     }
 
