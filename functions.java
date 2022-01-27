@@ -5,7 +5,8 @@
 *       This class once implemented provides a variety of functions that simplify writing out a few tedious
 *       things with java input and output. Use by using "import static functions.functions.*".
  *   Modified January 27th, 2022:
- *       Added function to return a random number
+ *       Added function to return a new Random seeded with system time
+ *       Added function to return random int based on Random function
  *       Added function to return boolean based on user input
 */
 
@@ -42,6 +43,10 @@ public class functions {
     
     // Will return a random number using system time
     static public Random newRand() { return new Random(System.currentTimeMillis()); }
+    static public int getRand(int bound) {
+        Random rand = newRand();
+        return rand.nextInt(bound);
+    }
 
     // Returns a boolean output depending on user input
     static public boolean askYN() {
