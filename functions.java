@@ -6,6 +6,7 @@
 *       things with java input and output. Use by using "import static functions.functions.*".
  *   Modified January 27th, 2022:
  *       Added function to return a random number
+ *       Added function to return boolean based on user input
 */
 
 package functions;
@@ -41,4 +42,10 @@ public class functions {
     
     // Will return a random number using system time
     static public Random newRand() { return new Random(System.currentTimeMillis()); }
+
+    // Returns a boolean output depending on user input
+    static public boolean askYN() {
+        char input = getChar();
+        return Character.toLowerCase(input) == 'y';
+    }
 }
