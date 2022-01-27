@@ -7,6 +7,7 @@
 */
 
 package functions;
+import java.util.Random;
 import java.util.Scanner;
 
 public class functions {
@@ -35,4 +36,7 @@ public class functions {
     static public long getLong() { return scanObj.nextLong(); }
     static public byte getByte() { return scanObj.nextByte(); }
     static public int getInt() { return scanObj.nextInt(); }
+    
+    // Will return a random number using system time
+    static public Random newRand() { return new Random(System.currentTimeMillis()); }
 }
