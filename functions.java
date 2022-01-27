@@ -4,6 +4,8 @@
 *   Purpose:
 *       This class once implemented provides a variety of functions that simplify writing out a few tedious
 *       things with java input and output. Use by using "import static functions.functions.*".
+ *   Modified January 27th, 2022:
+ *       Added function to return a random number
 */
 
 package functions;
