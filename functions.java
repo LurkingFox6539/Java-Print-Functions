@@ -6,9 +6,12 @@
  *       things with java input and output. Use by using "import static functions.functions.*".
  *   Modified January 27th, 2022:
  *       Added askYN() and getRand()
+ *   Modified January 28th, 2022:
+ *       Added sleep()
  */
 
 package functions;
+import java.lang.Thread;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -49,5 +52,10 @@ public class functions {
     static public boolean askYN() {
         char input = getChar();
         return Character.toLowerCase(input) == 'y';
+    }
+
+    // Sleep function
+    static public void sleep(long input) throws InterruptedException {
+        Thread.sleep(input);
     }
 }
