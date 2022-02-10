@@ -2,12 +2,8 @@
  *   Mark Wheeler III
  *   January 20th, 2022
  *   Purpose:
- *       This class once implemented provides a variety of functions that simplify writing out a few tedious
- *       things with java input and output. Use by using "import static functions.functions.*".
- *   Modified January 27th, 2022:
- *       Added askYN() and getRand()
- *   Modified January 28th, 2022:
- *       Added sleep()
+ *       A small library of functions I wanted to have simplified so that they're more intuitive,
+ *   along with some random ones just because. Use by using "import static functions.functions.*".
  */
 
 package functions;
@@ -55,7 +51,8 @@ public class functions {
     }
 
     // Sleep function
-    static public void sleep(long input) throws InterruptedException {
-        Thread.sleep(input);
-    }
+    static public void sleep(long input) throws InterruptedException { Thread.sleep(input); }
+
+    // Heads true, tails false
+    static public boolean coinFlip() { return getRand(2) == 0; }
 }
