@@ -3,7 +3,7 @@
  *   January 20th, 2022
  *   Purpose:
  *       A small library of functions I wanted to have simplified so that they're more intuitive,
- *   along with some random ones just because. Use by using "import static functions.functions.*".
+ *   along with some random ones just because. Use by including "import static functions.functions.*".
  */
 
 package functions;
